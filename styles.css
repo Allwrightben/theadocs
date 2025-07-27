@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.8rem;
     color: #b76e79;
     margin-bottom: 0.5rem;
@@ -52,6 +52,7 @@ body {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .nav-links a {
@@ -69,7 +70,8 @@ body {
 
 /* Hero */
 .hero {
-    background-image: url('images/heronodecal.png');
+    background: linear-gradient(rgba(183,110,121,0.85), rgba(183,110,121,0.85)), 
+    url('images/syringedecal.png') no-repeat center/cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,19 +109,13 @@ body {
     margin-bottom: 1.5em;
 }
 
-.btn-primary {
-    background-color: #f48fb1;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #ec407a;
+.about-hero-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(183, 110, 121, 0.2);
 }
 
 /* === MOBILE ADAPTATION === */
@@ -156,6 +152,13 @@ body {
 .services h3 {
     text-align: center;
     font-size: 2rem;
+    color: #b76e79;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.5rem;
     color: #b76e79;
     margin-bottom: 2rem;
 }
