@@ -30,9 +30,12 @@
         content="Enhance your natural beauty with professional aesthetics treatments by licensed doctors. Anti-wrinkle injections, dermal fillers, lip fillers, and microneedling in London, Brighton, St Albans, and Watford." />
     <meta property="twitter:image" content="https://theaestheticsdocs.co.uk/images/logoletters.png" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logoletters.png" />
-    <link rel="apple-touch-icon" href="images/logoletters.png" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/logoletters.png" as="image">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Structured Data for Local Business -->
     <script type="application/ld+json">
@@ -163,40 +166,46 @@
             <h2>Our Services</h2>
             <ul class="services-list">
                 <li>
-                    <img src="images/forehead.jpg" alt="Forehead anti-wrinkle treatment" class="service-image">
+                    <img src="images/forehead.jpg" alt="Forehead anti-wrinkle treatment" class="service-image"
+                        loading="lazy" width="400" height="267">
                     <h4><a href="forehead-injections.html" class="service-link">Forehead Anti-Wrinkle Injections</a>
                     </h4>
                     <p>Smooth out horizontal lines on the forehead caused by facial expressions, helping you achieve a
                         refreshed, younger appearance.</p>
                 </li>
                 <li>
-                    <img src="images/crowsfeet.jpg" alt="Crows-feet anti-wrinkle treatment" class="service-image">
+                    <img src="images/crowsfeet.jpg" alt="Crows-feet anti-wrinkle treatment" class="service-image"
+                        loading="lazy" width="400" height="267">
                     <h4><a href="crows-feet-injections.html" class="service-link">Crows-Feet Anti-Wrinkle Injections</a>
                     </h4>
                     <p>Target fine lines around the outer corners of the eyes to soften your gaze and restore a youthful
                         sparkle.</p>
                 </li>
                 <li>
-                    <img src="images/frownlines.jpg" alt="Frown-lines anti-wrinkle treatment" class="service-image">
+                    <img src="images/frownlines.jpg" alt="Frown-lines anti-wrinkle treatment" class="service-image"
+                        loading="lazy" width="400" height="267">
                     <h4><a href="frown-lines-injections.html" class="service-link">Frown-Lines Anti-Wrinkle
                             Injections</a></h4>
                     <p>Reduce the appearance of deep lines between the eyebrows for a more relaxed and approachable
                         look.</p>
                 </li>
                 <li>
-                    <img src="images/smilelines.jpg" alt="Dermal filler treatment" class="service-image">
+                    <img src="images/smilelines.jpg" alt="Dermal filler treatment" class="service-image" loading="lazy"
+                        width="400" height="267">
                     <h4><a href="dermal-filler.html" class="service-link">Dermal Filler</a></h4>
                     <p>Minimise nasolabial folds/smile lines and marionette lines for smoother skin and a naturally
                         lifted appearance around the mouth and cheeks</p>
                 </li>
                 <li>
-                    <img src="images/lipfiller.jpg" alt="Lip filler treatment" class="service-image">
+                    <img src="images/lipfiller.jpg" alt="Lip filler treatment" class="service-image" loading="lazy"
+                        width="400" height="267">
                     <h4><a href="lip-filler.html" class="service-link">Lip Filler</a></h4>
                     <p>Enhance volume and shape for beautifully defined, more voluminous lips with a soft and natural
                         feel.</p>
                 </li>
                 <li>
-                    <img src="images/microneedling.jpg" alt="Microneedling treatment" class="service-image">
+                    <img src="images/microneedling.jpg" alt="Microneedling treatment" class="service-image"
+                        loading="lazy" width="400" height="267">
                     <h4><a href="microneedling.html" class="service-link">Microneedling (or collagen induction
                             therapy)</a></h4>
                     <p>Bring rejuvenating blood flow to the surface for healthier, younger looking skin.
