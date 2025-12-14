@@ -272,12 +272,12 @@ body {
 .services-list li {
     background: #fff;
     border-radius: var(--border-radius);
-    padding: 2rem;
     box-shadow: var(--shadow);
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .service-image {
@@ -307,31 +307,43 @@ body {
     transition: var(--transition);
 }
 
-.services-list li:hover::before {
+.service-card-link:hover::before {
     transform: scaleX(1);
-}
-
-.services-list li:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .services-list h4 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
     font-weight: 600;
     font-size: 1.3rem;
 }
 
-.service-link {
-    color: var(--primary-color);
+.service-card-link {
+    display: block;
+    color: inherit;
     text-decoration: none;
+    height: 100%;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-link h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
     transition: var(--transition);
 }
 
-.service-link:hover {
+.service-card-link:hover h4 {
     color: var(--accent-color);
-    text-decoration: underline;
 }
 
 .services-list p {
