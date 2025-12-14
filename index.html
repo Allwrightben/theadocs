@@ -262,7 +262,71 @@
 
         <section id="contact" class="contact container">
             <h2>Contact Us</h2>
-            <p>Email us at <a href="mailto:theaestheticsdocs@gmail.com">theaestheticsdocs@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://wa.me/447534381341?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20beauty%20treatments"
+                    target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/theaestheticsdocs/?igsh=bmprbGhiMmQ5NXFs" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@theaestheticsdocs" target="_blank" rel="noopener noreferrer"
+                    aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+            <form action="https://formspree.io/f/mzznwjkg" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="treatment">Treatment of Interest</label>
+                        <select id="treatment" name="treatment">
+                            <option value="">Select a treatment...</option>
+                            <option value="forehead-injections">Forehead Anti-Wrinkle Injections</option>
+                            <option value="crows-feet-injections">Crows-Feet Anti-Wrinkle Injections</option>
+                            <option value="frown-lines-injections">Frown-Lines Anti-Wrinkle Injections</option>
+                            <option value="dermal-filler">Dermal Filler</option>
+                            <option value="lip-filler">Lip Filler</option>
+                            <option value="microneedling">Microneedling</option>
+                            <option value="consultation">General Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Preferred Location</label>
+                    <select id="location" name="location">
+                        <option value="">Select a location...</option>
+                        <option value="london">London</option>
+                        <option value="brighton">Brighton</option>
+                        <option value="st-albans">St Albans</option>
+                        <option value="watford">Watford</option>
+                        <option value="online">Online Consultation</option>
+                        <option value="no-preference">No Preference</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Tell us about your goals, concerns, or any questions you have..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
             <div class="social-links">
                 <a href="https://wa.me/447534381341?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20beauty%20treatments"
                     target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
